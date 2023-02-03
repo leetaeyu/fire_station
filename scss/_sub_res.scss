@@ -1,0 +1,171 @@
+$mo768:768px;
+$mo1280:1280px;
+@mixin min_width ($screen){
+    @media screen and (min-width:$screen) {
+        @content;
+    }
+}
+
+
+
+
+@include min_width ($mo768) {
+
+    /* lnb */
+.fire_lnb_container {
+    .fire_lnb_wrap {
+        .lnb_banner {
+            padding-top: 20rem;
+            >div {
+                font-size: 3.5rem;
+                span {
+                    font-size: 3rem;
+                }
+            }
+        }
+        .lnb_box {
+            ul {
+                gap: 6rem;
+                li {
+                    a {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* symbol */
+.symbol_container {
+    .symbol_wrap {
+        h2 {
+            font-size: 3rem;
+        }
+        
+        .symbol_box1 {
+            width: 70%;
+            .symbol_swiper {
+                max-width: 70rem;
+                .imgbox {
+
+                }
+            }
+            .symbol_txtbox {
+                .txt1 {
+                    h3 {
+                        font-size: 2.5rem;
+                    }
+                }
+                .txt2 {
+                    h3 {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+        .symbol_box2 {
+            gap: 1%;
+            >div {
+                width: 31%;
+                padding-right: 1%;
+                border-right: 0.1rem solid #ddd;
+                &:nth-child(2), &:nth-child(4){
+                    border-right: 0.1rem solid #ddd;
+                }
+                &:nth-child(3), &:nth-child(6) {
+                    border-right: 0;
+                }
+                &:nth-child(2), &:nth-child(4), &:nth-child(6) {
+                    padding-right: 1%;
+                    padding-left: 0;
+                }
+            }
+        }
+        .section2 {
+            .symbol_mark {
+                .imgbox {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}}
+
+
+
+
+
+@include min_width ($mo1280) {
+/* lnb */
+.fire_lnb_container {
+    .fire_lnb_wrap {
+        .lnb_banner {
+            padding-top: 28.5rem;
+        } 
+    }
+}
+
+/* symbol */
+.symbol_container {
+    .symbol_wrap {
+        h2 {
+            font-size: 3rem;
+        }
+        .symbol_box1 {
+            flex-wrap: nowrap;
+            width: 100%;
+            .symbol_swiper {
+                width: 45%;
+            }
+            .symbol_txtbox {
+                width: 51%;
+                margin: 0;
+                margin-left: 3%;
+                .txt1 {
+                    h3 {
+                        font-size: 2.5rem;
+                        text-align: initial;
+                    }
+                }
+                .txt2 {
+                    margin-top: 5rem;
+                    h3 {
+                        font-size: 2.5rem;
+                        text-align: initial;
+                    }
+                }
+            }
+        }
+        .symbol_box2 {
+            flex-wrap: nowrap;
+            width: 100%;
+            margin: 0;
+            margin-top: 2.5rem;
+            >div {
+                width: 13%;
+                padding-right: 1%;
+                &:nth-child(1) {padding-left: 1%;}
+                &:nth-child(3), &:nth-child(6) {
+                    border-right: 0.1rem solid #ddd;
+                }
+            }
+        }
+        .section2 {
+            .symbol_mark {
+                width: 50%;
+                .imgbox {
+                    width: 50%;
+                }
+            }
+            .symbol_mark_box {
+                .symbol_mark_color {
+                    .item {
+                        flex-wrap: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}
+}

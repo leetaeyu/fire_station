@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@import "./_reset.scss";
+@import "./_main.scss";
+@import "./_main_res.scss";
+@import "./_common.scss";
+@import "./_common_res.scss";
+@import "./_sub.scss";
+@import "./_sub_res.scss";
+
+@font-face {
+    font-family: 'Shilla_CultureB-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/Shilla_CultureB-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}

@@ -1,0 +1,63 @@
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+body {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+img {
+    vertical-align: top;
+    border: 0;
+}
+a:focus,button:focus {
+    outline: 0;
+}
+address,i,em {
+    font-style: normal;
+}
+label,button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+}
+.blind {
+    position: absolute;
+    left: -9999em;
+}
+.hidden {
+    overflow: hidden;
+}
+table {
+    border-collapse: collapse;
+}
+:before, :after {
+    box-sizing: border-box;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.skip a{
+    position: absolute;
+    top:-200px;
+    width: 100%;
+    /* height: ; 주고싶은만큼 */
+    line-height: 50px;
+    text-align: center;
+}
+.skip a:focus {
+    top:0;
+}

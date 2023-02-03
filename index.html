@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    <title>강동소방서</title>
+</head>
+<body>
+    <!-- skip -->
+    <div id="skip">
+        <a href="#n">본문 바로가기</a>
+        <a href="#n">주 메뉴 바로가기</a>
+    </div>
+    <!-- header -->
+    <header id="fire_hd_pc">
+        <div class="hd_container">
+            <div class="hd_wrap">
+                <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="소방서"></a></h1>
+                <nav class="pc_gnb_wrap">
+                    <ul>
+                        <li class="pc_depth1">
+                            <a href="#n">민원안내</a>
+                        </li>
+                        <li class="pc_depth1">
+                            <a href="#n">참여·교육</a>
+                        </li>
+                        <li class="pc_depth1">
+                            <a href="#n">뉴스·소식</a>
+                        </li>
+                        <li class="pc_depth1">
+                            <a href="#n">안전정보</a>
+                        </li>
+                        <li class="pc_depth1">
+                            <a href="#n">홍보·미디어</a>
+                        </li>
+                        <li class="pc_depth1">
+                            <a href="#n">소방서소개</a>
+                        </li>
+                    </ul>
+                    <div class="pc_depth2_box">
+                        <ul class="pc_depth2 pc_depth2_1">
+                            <li>민원안내</li>
+                            <li><a href="#n">민원소식</a></li>
+                            <li><a href="#n">전자민원</a></li>
+                            <li><a href="#n">다중이용업소</a></li>
+                            <li><a href="#n">주민지원센터</a></li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_2">
+                            <li>참여·교육</li>
+                            <li><a href="#n">칭찬합시다</a></li>
+                            <li><a href="#n">소방안전교육</a></li>
+                            <li><a href="#n">안전체험관 예약</a></li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_3">
+                            <li>뉴스·소식</li>
+                            <li><a href="#n">공지사항</a></li>
+                            <li><a href="#n">입찰공고</a></li>
+                            <li><a href="#n">보도자료</a></li>
+                            <li><a href="#n">채용공고</a></li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_4">
+                            <li>안전정보</li>
+                            <li><a href="#n">자연재난</a></li>
+                            <li><a href="#n">사회재난</a></li>
+                            <li><a href="#n">생활안전</a></li>
+                            <li><a href="#n">응급처치</a></li>
+                            <li><a href="#n">영상·메뉴얼</a></li>
+                            <li><a href="#n">위험물 판정</a></li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_5">
+                            <li>홍보·미디어</li>
+                            <li><a href="#n">영상자료</a></li>
+                            <li><a href="sub.html">상징물</a></li>
+                            <li><a href="#n">사진자료</a></li>
+                            <li><a href="#n">소방공모전</a></li>
+                            <li><a href="#n">소방동요대회</a></li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_6">
+                            <li>소방서소개</li>
+                            <li><a href="#n">인사말</a></li>
+                            <li><a href="#n">소방서연혁</a></li>
+                            <li><a href="#n">소방서조직</a></li>
+                            <li><a href="#n">소방서비스현장</a></li>
+                            <li><a href="#n">찾아오시는길</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="seoul">
+                    <li><a href="#n">서울소식</a></li>
+                    <li><a href="#n">분야별정보</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <header id="fire_hd_mo">
+        <div class="hd_container">
+            <div class="hd_wrap">
+                <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="소방서"></a></h1>
+                <button class="gnb_button gnb_open">
+                    <span class="blind">모바일 메뉴 펼침 버튼</span>
+                    <span class="line line1">선</span>
+                    <span class="line line2">선</span>
+                    <span class="line line3">선</span>
+                </button>
+            </div>
+        </div>
+        <nav class="gnb_container">
+            <div class="mo_gnb_wrap">
+                <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="소방서"></a></h1>
+                <button class="gnb_button gnb_close">
+                    <span class="blind">모바일 메뉴 닫힘 버튼</span>
+                    <span class="line line1">선</span>
+                    <span class="line line2">선</span>
+                    <span class="line line3">선</span>
+                </button>
+                <ul class="seoul">
+                    <li><a href="#n">서울소식</a></li>
+                    <li><a href="#n">분야별정보</a></li>
+                </ul>
+                <ul class="depth_box">
+                    <li class="mo_depth1">
+                        <a href="#n">민원안내</a>
+                        <ul class="mo_depth2">
+                            <li><a href="#n">민원소식</a></li>
+                            <li><a href="#n">전자민원</a></li>
+                            <li><a href="#n">다중이용업소</a></li>
+                            <li><a href="#n">주민지원센터</a></li>
+                        </ul>
+                    </li>
+                    <li class="mo_depth1">
+                        <a href="#n">참여·교육</a>
+                        <ul class="mo_depth2">
+                            <li><a href="#n">칭찬합시다</a></li>
+                            <li><a href="#n">소방안전교육</a></li>
+                            <li><a href="#n">안전체험관 예약</a></li>
+                        </ul>
+                    </li>
+                    <li class="mo_depth1">
+                        <a href="#n">뉴스·소식</a>
+                        <ul class="mo_depth2">
+                            <li><a href="#n">공지사항</a></li>
+                            <li><a href="#n">입찰공고</a></li>
+                            <li><a href="#n">보도자료</a></li>
+                            <li><a href="#n">채용공고</a></li>
+                        </ul>
+                    </li>
+                    <li class="mo_depth1">
+                        <a href="#n">안전정보</a>
+                        <ul class="mo_depth2">
+                            <li><a href="#n">자연재난</a></li>
+                            <li><a href="#n">사회재난</a></li>
+                            <li><a href="#n">생활안전</a></li>
+                            <li><a href="#n">응급처치</a></li>
+                            <li><a href="#n">영상·메뉴얼</a></li>
+                            <li><a href="#n">위험물 판정</a></li>
+                        </ul>
+                    </li>
+                    <li class="mo_depth1">
+                        <a href="#n">홍보·미디어</a>
+                        <ul class="mo_depth2">
+                            <li><a href="#n">영상자료</a></li>
+                            <li><a href="sub.html">상징물</a></li>
+                            <li><a href="#n">사진자료</a></li>
+                            <li><a href="#n">소방공모전</a></li>
+                            <li><a href="#n">소방동요대회</a></li>
+                        </ul>
+                    </li>
+                    <li class="mo_depth1">
+                        <a href="#n">소방서소개</a>
+                        <ul class="mo_depth2">
+                            <li><a href="#n">인사말</a></li>
+                            <li><a href="#n">소방서연혁</a></li>
+                            <li><a href="#n">소방서조직</a></li>
+                            <li><a href="#n">소방서비스현장</a></li>
+                            <li><a href="#n">찾아오시는길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+            
+
+    </header>
+    <!-- main -->
+    <main id="fire_main">
+        <!-- banner -->
+        <section class="banner_container">
+            <h2 class="blind">메인배너</h2>
+            <div class="banner_wrap">
+                <div class="swiper banner_swiper">
+                    <div class="swiper-wrapper banner_box">
+                        <div class="swiper-slide banner_img"><img src="images/main_benner_1.png" alt="banner_1"></div>
+                        <div class="swiper-slide banner_img"><img src="images/main_benner_2.png" alt="banner_2"></div>
+                        <div class="swiper-slide banner_img"><img src="images/main_benner_3.png" alt="banner_3"></div>
+                        <div class="swiper-slide banner_img"><img src="images/main_benner_4.png" alt="banner_4"></div>
+                    </div>
+                </div>
+                <div class="bg">검정배경</div>
+                <div class="banner_txtbox">
+                    <div class="banner_title">천만시민의 안전</div>
+                    <div class="banner_txt"><strong>시민파수꾼</strong>이 되겠습니다.</div>
+                </div>
+            </div>
+        </section>
+        <!-- news -->
+        <section class="news_container">
+            <div class="news_wrap">
+                <div class="news_section1 news_bigbox">
+                    <div class="news_box1">
+                        <h2>공지/뉴스</h2>
+                        <div class="news_txt">천만시민의 안전을 우선으로 생각하는<br>강동소방서의 새로운 소식입니다.</div>
+                        <div class="news_more more"><a href="#n">MORE<span></span></a></div>
+                    </div>
+                    <div class="news_box2">
+                        <div class="news_item">
+                            <div class="news_item_1">
+                                <div class="item">뉴스</div>
+                                <div class="title">화재안전조사계획 사전 공개</div>
+                            </div>
+                            <div class="news_date">2022.12.29</div>
+                        </div>
+                        <div class="news_item">
+                            <div class="news_item_1">
+                                <div class="item">공고</div>
+                                <div class="title">loT 소화전 관리시스템 CCTV 구축에 따른 행정에고 공고</div>
+                            </div>
+                            <div class="news_date">2022.12.23</div>
+                        </div>
+                        <div class="news_item">
+                            <div class="news_item_1">
+                                <div class="item">공고</div>
+                                <div class="title">가양대교CCTV 및 동작·반포대교 설치에 따른 행정예고 공고</div>
+                            </div>
+                            <div class="news_date">2022.12.20</div>
+                        </div>
+                        <div class="news_item">
+                            <div class="news_item_1">
+                                <div class="item">모집</div>
+                                <div class="title">서울시 손목닥터 9988 참여자 모집</div>
+                            </div>
+                            <div class="news_date">2022.12.13</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="prime_time">
+                <div><span></span></div>
+            </div>
+            <div class="news_section2">
+                <div class="swiper news_wrap2 news_swiper">
+                    <div class="swiper-wrapper news_slide_box">
+                        <div class="swiper-slide news_img "><img src="images/poster_1.jpg" alt="119신고방법"></div>
+                        <div class="swiper-slide news_img "><img src="images/poster_2.jpg" alt="안전,보건 경영방침"></div>
+                        <div class="swiper-slide news_img "><img src="images/poster_3.jpg" alt="심폐소생술"></div>
+                        <div class="swiper-slide news_img "><img src="images/poster_4.jpg" alt="청원하세요"></div>
+                        <div class="swiper-slide news_img "><img src="images/poster_5.jpg" alt="개인정보"></div>
+                        <div class="swiper-slide news_img "><img src="images/poster_6.jpg" alt="재난심리검사"></div>
+                        <div class="swiper-slide news_img "><img src="images/poster_7.jpg" alt="사칭 피싱주의"></div>
+                        <div class="swiper-slide news_img "><img src="images/poster_8.jpg" alt="포스터공모전"></div>
+                    </div>
+                </div>
+                <div class="prev"></div>
+                <div class="next"></div>
+                <div class="swiper-pagination news_pagination"></div>
+            </div>
+        </section>
+        <!-- like -->
+        <section class="like_container">
+            <div class="like_wrap">
+                <div class="like_bigbox">
+                    <h2>알림마당</h2>
+                    <ul>
+                        <li class="likebox1"><a href="#n" class="box_img box_img1"></a><span>전국119활동상황</span></li>
+                        <li class="likebox4"><a href="#n" class="box_img box_img4"></a><span>질의및민원신청</span></li>
+                        <li class="likebox6"><a href="#n" class="box_img box_img6"></a><span>국민의견및칭찬</span></li>
+                        <li class="likebox7"><a href="#n" class="box_img box_img7"></a><span>전국소방기관안내</span></li>
+                        <li class="likebox2"><a href="#n" class="box_img box_img2"></a><span>청장동정</span></li>
+                        <li class="likebox3"><a href="#n" class="box_img box_img3"></a><span>소관법령</span></li>
+                        <li class="likebox5"><a href="#n" class="box_img box_img5"></a><span>통계</span></li>
+                    </ul>
+                </div>
+                <div class="like_bigbox2">
+                    <div class="like_box1">
+                        <div class="safety">
+                            <h3 class="title">소중한 생명을 지키는 <strong>안전상식</strong></h3>
+                            <div class="txtbox1"><span>119 구급차가 오기 전,</span><br>미리 준비하면 좋은 것!<span class="like_next"></span></div>
+                            <div class="txtbox2"><span>119 구급신고,</span><br>이렇게 하세요!<span class="like_next"></span></div>
+                        </div>
+                    </div>
+                    <div class="like_box2">
+                        <h3>119일일현황</h3>
+                        <div>
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+                    <ul class="like_box3">
+                        <li><a href="#n" class="like_br2"><img src="images/ban01.jpg" alt="소방청 소방민원센터"></a></li>
+                        <li><a href="#n" class="like_br3"><img src="images/ban02.png" alt="119상담"></a></li>
+                        <li><a href="#n" class="like_br4"><img src="images/ban03.jpg" alt="소방청국가화재정보센터"></a></li>
+                        <li><a href="#n" class="like_br5"><img src="images/ban05.jpg" alt="소방시설민원센터"></a></li>
+                    </ul>
+                    <div class="like_box4">
+                        <div class="swiper like_swiper">
+                            <h3>기관 공지사항</h3>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide like_item"><img src="images/like_slide_1.jpg" alt="공공기관"></div>
+                                <div class="swiper-slide like_item"><img src="images/like_slide_2.jpg" alt="긴급신고"></div>
+                                <div class="swiper-slide like_item"><img src="images/like_slide_3.jpg" alt="공익신고"></div>
+                                <div class="swiper-slide like_item"><img src="images/like_slide_4.jpg" alt="조직문화혁신"></div>
+                                <div class="swiper-slide like_item"><img src="images/like_slide_5.jpg" alt="개인정보 처리 및 보호수칙"></div>
+                                <div class="swiper-slide like_item"><img src="images/like_slide_6.jpg" alt="백신 허위조작정보"></div>
+                                <div class="swiper-slide like_item"><img src="images/like_slide_7.jpg" alt="불필요한 이메일 삭제"></div>
+                                <div class="swiper-slide like_item"><img src="images/like_slide_8.jpg" alt="코로나백신 예방접종 교육"></div>
+                                <div class="swiper-slide like_item"><img src="images/like_slide_9.jpg" alt="본인서명사실확인서"></div>
+                                <div class="swiper-slide like_item"><img src="images/like_slide_10.jpg" alt="개인정보보호"></div>
+                                <div class="swiper-slide like_item"><img src="images/like_slide_11.jpg" alt="22년 하반기부터 이렇게 달라집니다"></div>
+                                <div class="swiper-slide like_item"><img src="images/like_slide_12.jpg" alt="정부 정책 사실은 이렇습니다"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- pr -->
+        <section class="pr_container">
+            <div class="pr_wrap">
+                <div class="pr_bigbox">
+                    <div class="pr_box1">
+                        <h3>홍보영상</h3>
+                        <div class="video"><iframe src="https://www.youtube.com/embed/yCfItBASGBE" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="pr_box2">
+                        <h3>소방안전교육 / 안전체험관 예약</h3>
+                        <div class="pr_more"><a href="#n">예약하기</a></div>
+                        <div class="swiper pr_swiper">
+                            <div class="swiper-wrapper imgbox">
+                                <div class="swiper-slide pr_item">
+                                    <div class="pr_img"><img src="images/pr1.jfif" alt="강동소방서"></div>
+                                    <div class="pr_txt">강동 안전체험관<br><span>온라인 예약 접수가 가능합니다.</span></div>
+                                </div>
+                                <div class="swiper-slide pr_item">
+                                    <div class="pr_img"><img src="images/pr2.JPG" alt="광진소방서"></div>
+                                    <div class="pr_txt">광진 안전체험관<br><span>온라인 예약 접수가 가능합니다.</span></div>
+                                </div>
+                                <div class="swiper-slide pr_item">
+                                    <div class="pr_img"><img src="images/pr3.jpg" alt="강서소방서"></div>
+                                    <div class="pr_txt">강서 소방안전교육장<br><span>온라인 예약 접수가 가능합니다.</span></div>
+                                </div>
+                                <div class="swiper-slide pr_item">
+                                    <div class="pr_img"><img src="images/pr4.jpg" alt="영등포소방서"></div>
+                                    <div class="pr_txt">영등포 소방안전교육장<br><span>온라인 예약 접수가 가능합니다.</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer id="fire_ft">
+        <div class="ft_container">
+            <div class="ft_wrap">
+                <div class="ft_box1">
+                    <div class="ft_logo"><a href="#n"><img src="images/ft_logo.png" alt="푸터로고"></a></div>
+                    <div class="ft_address">
+                        <ul class="txt1">
+                            <li><a href="#n" class="num1">개인정보처리방침</a></li>
+                            <li><a href="#n">영상정보처리기기 관리 · 운영지침</a></li>
+                            <li><a href="#n">이메일무단수집거부</a></li>
+                            <li><a href="#n" class="num2">오시는길</a></li>
+                        </ul>
+                        <address>(05397)서울특별시 강동구 성내로39(성내동)<br>
+                            ☎ (주간) 02-6981-7673 (야간) 02-6981-7710<br>
+                            FAX) (상황실) 02-6981-7717, (예방과 민원실) 02-6981-7677
+                        </address>
+                        <div class="copy">COPYRIGHTⓒ 2023 강동 소방서. ALL RIGHTS RESERVED.</div>
+                    </div>
+                </div>
+                <div class="ft_station">
+                    <h3 class="blind">소방서</h3>
+                    <div class="ft_station_inner">
+                        <a href="#n" class="station_label">소방서 바로가기</a>
+                        <div class="station_item">
+                            <a href="#n">강남소방서</a>
+                            <a href="#n">강동소방서</a>
+                            <a href="#n">강북소방서</a>
+                            <a href="#n">강서소방서</a>
+                            <a href="#n">관악소방서</a>
+                            <a href="#n">구로소방서</a>
+                            <a href="#n">노원소방서</a>
+                            <a href="#n">도봉소방서</a>
+                            <a href="#n">동대문소방서</a>
+                            <a href="#n">동작소방서</a>
+                            <a href="#n">마포소방서</a>
+                            <a href="#n">서대문소방서</a>
+                            <a href="#n">서초소방서</a>
+                            <a href="#n">성북소방서</a>
+                            <a href="#n">성동소방서</a>
+                            <a href="#n">송파소방서</a>
+                            <a href="#n">양천소방서</a>
+                            <a href="#n">영등포소방서</a>
+                            <a href="#n">용산소방서</a>
+                            <a href="#n">은평소방서</a>
+                            <a href="#n">종로소방서</a>
+                            <a href="#n">중랑소방서</a>
+                            <a href="#n">중부소방서</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

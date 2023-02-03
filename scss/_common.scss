@@ -1,0 +1,304 @@
+@charset 'UTF-8';
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+body {
+    font-family: "pretendard";
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+/* skip 메뉴 */
+#skip {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    a {
+        position: absolute;
+        left: 0;
+        top: -4.4rem;
+        display: block; /*생략 가능*/
+        width: 100%;
+        font-size: 1.6rem;
+        color: #fff;
+        background-color: #982029;
+        line-height: 44px;
+        text-align: center;     
+        transition-property: top;
+        transition-duration: 0.3s;
+        &:focus, &:active {
+            top:0;
+        }
+    }
+}
+/* header */
+#fire_hd_pc {
+    .hd_container {
+        display: none;
+    }
+}
+#fire_hd_mo {
+    .hd_container {
+        .hd_wrap {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 9rem;
+            margin: 0 auto;
+            background-color: #982029;
+            .logo {
+                width: 15rem;
+                padding-left: 1.5rem;
+                a {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .gnb_open {
+                // display: none;
+                position: absolute;
+                right: 2rem;
+                top: 50%;
+                width: 4rem;
+                height: 4rem;
+                transform: translateY(-50%);
+                .line {
+                    position: absolute;
+                    left: 1rem;
+                    top: 50%;
+                    width: 2rem;
+                    height: 0.2rem;
+                    border-radius: 0.1rem;
+                    background-color: #fff;
+                    overflow: hidden;
+                    text-indent: -9999rem;
+                    transition: 0.3s;
+                }
+                .line1 {
+                    transform: translateY(-7px);
+                }
+                .line3 {
+                    transform: translateY(7px);
+                }
+            }
+
+        }
+    }
+    .gnb_container {
+        position: fixed;
+        top: -100vh;
+        left:  0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        overflow: auto;
+        transition: top 0.8s;
+        background-color: #fff;
+        z-index: 101;
+        &.active {
+            top: 0;
+            opacity: 1;
+        }
+        .mo_gnb_wrap {
+            position: relative;
+            width: 100%;
+            height: 9rem;
+            margin: 0 auto;
+            background-color: #982029;
+            .logo {
+                width: 15rem;
+                padding-left: 1.5rem;
+                padding-top: 2rem;
+                a {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .gnb_close {
+                position: absolute;
+                right: 2rem;
+                top: 50%;
+                width: 4rem;
+                height: 4rem;
+                transform: translateY(-50%);
+                .line {
+                    position: absolute;
+                    left: 1rem;
+                    top: 50%;
+                    width: 2rem;
+                    height: 0.2rem;
+                    border-radius: 0.1rem;
+                    background-color: #fff;
+                    overflow: hidden;
+                    text-indent: -9999rem;
+                    transition: 0.3s;
+                }
+                .line {
+                    background-color: #fff;
+                }
+                .line1 {
+                    transform: rotate(-45deg);
+                }
+                .line2 {
+                    opacity: 0;
+                }
+                .line3 {
+                    transform: rotate(45deg);
+                }
+            }
+            .seoul {
+                display: flex;
+                gap: 2rem;
+                padding-top: 4rem;
+                padding-left: 2rem;
+                li {
+                    a {
+                        font-size: 2rem;
+                    }
+                }
+            }
+            .depth_box {
+                margin-top: 1rem;
+                margin-left: 2rem;
+                .mo_depth1 {
+                    border-bottom:1px solid #ddd;
+                    display: flex;
+                    >a {
+                        display: inline-block;
+                        width: 14rem;
+                        padding-top: 2rem;
+                        padding-bottom: 2rem;
+                        font-size: 2.5rem;
+                        &:hover {
+                            font-weight: 600;
+                        }
+                    }
+                    .mo_depth2 {
+                        display: none;
+                        padding-left: 4rem;
+                        padding-top: 2rem;
+                        padding-bottom: 2rem;
+                        >li {
+                            list-style-type:square;
+                            >a {
+                                display: inline-block;
+                                margin-top: 0.3rem;
+                                padding-bottom: 0.4rem;
+                                font-size: 2rem;
+                                &:hover {
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* footer */
+#fire_ft {
+    .ft_container {
+        background-color: #6c9fce;
+        .ft_wrap {
+            position: relative;
+            max-width: 145rem;
+            margin: 0 auto;
+            padding: 2.5rem 0;
+            color:#fff;
+            .ft_logo {
+                a {
+                    img {
+                        width: 15rem;
+                    }
+                }
+            }
+            .ft_box1 {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 2rem;
+                padding-left: 2rem;
+                .ft_address {
+                    font-size: 1.5rem;
+                    .txt1 {
+                        display: flex;
+                        flex-direction: column;
+                        li {
+                            a {
+                                color:#fff;
+                                &.num1 {font-weight: 700; color: #000;}
+                            }
+                        }
+                    }
+                    address {
+                        padding-top: 2rem;
+                        padding-bottom: 1rem;
+                    }
+                    .copy {
+                        display: inline-block;
+                        padding-top: 1rem;
+                        font-size: 1.2rem;
+                        border-top: 0.1rem solid #ddd;
+                    }
+                }
+            }
+            .ft_station {
+                display: none;
+                position: absolute;
+                right: 0;
+                bottom: 8rem;
+                z-index: 1;
+                .ft_station_inner {
+                    position: relative;
+                    width: 20rem;
+                    .station_label {
+                        display: block;
+                        padding: 0 1em;
+                        line-height: 4rem;
+                        border: 0.1rem solid rgba(255,255,255,0.5);
+                        border-radius: 0.5rem;
+                        color: #fff;
+                        &::after {
+                            /* 삼각형 보더 ▼ */
+                            content: '';
+                            float: right;
+                            display: block;
+                            margin-top: 1.3rem;
+                            border: 0.5rem solid transparent;
+                            border-bottom-color: #fff;
+                        }
+                    }
+                    .station_item {
+                        position: absolute;
+                        left: 0;
+                        bottom: 4.4rem;
+                        width: 100%;
+                        height: 0;
+                        border-radius: 0.5rem;
+                        background-color: #f1f1f1;
+                        line-height: 2;
+                        font-size: 0.85em;
+                        overflow-y: scroll;
+                        transition: 0.5s;
+                        &.active {
+                            height: 39.7rem;
+                            padding: 0.6em 0;
+                        }
+                        a {
+                            display: block;
+                            padding-left: 2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
