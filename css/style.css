@@ -1061,6 +1061,19 @@ body {
 #fire_hd_mo .gnb_container .mo_gnb_wrap .depth_box .mo_depth1 > a:hover {
   font-weight: 600;
 }
+#fire_hd_mo .gnb_container .mo_gnb_wrap .depth_box .mo_depth1 > a.true {
+  position: relative;
+}
+#fire_hd_mo .gnb_container .mo_gnb_wrap .depth_box .mo_depth1 > a.true::after {
+  position: absolute;
+  top: 2.8rem;
+  right: 1rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #000;
+  content: "";
+}
 #fire_hd_mo .gnb_container .mo_gnb_wrap .depth_box .mo_depth1 .mo_depth2 {
   display: none;
   padding-left: 4rem;
@@ -1078,6 +1091,19 @@ body {
 }
 #fire_hd_mo .gnb_container .mo_gnb_wrap .depth_box .mo_depth1 .mo_depth2 > li > a:hover {
   font-weight: 600;
+}
+#fire_hd_mo .gnb_container .mo_gnb_wrap .depth_box .mo_depth1 .mo_depth2 > li > a.true {
+  position: relative;
+}
+#fire_hd_mo .gnb_container .mo_gnb_wrap .depth_box .mo_depth1 .mo_depth2 > li > a.true::after {
+  position: absolute;
+  top: 0.8rem;
+  right: -1.5rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #000;
+  content: "";
 }
 
 /* footer */
@@ -1270,6 +1296,19 @@ body {
   #fire_hd_pc .hd_container .hd_wrap .pc_gnb_wrap > ul .pc_depth1 > a:hover {
     color: #000;
   }
+  #fire_hd_pc .hd_container .hd_wrap .pc_gnb_wrap > ul .pc_depth1 > a.true {
+    position: relative;
+  }
+  #fire_hd_pc .hd_container .hd_wrap .pc_gnb_wrap > ul .pc_depth1 > a.true::after {
+    position: absolute;
+    top: 3.7rem;
+    right: 1.2rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #fff;
+    content: "";
+  }
   #fire_hd_pc .hd_container .hd_wrap .pc_gnb_wrap .pc_depth2_box {
     position: absolute;
     top: 9.1rem;
@@ -1302,6 +1341,19 @@ body {
   }
   #fire_hd_pc .hd_container .hd_wrap .pc_gnb_wrap .pc_depth2_box .pc_depth2 li a:hover {
     scale: 1.1;
+  }
+  #fire_hd_pc .hd_container .hd_wrap .pc_gnb_wrap .pc_depth2_box .pc_depth2 li a.true {
+    position: relative;
+  }
+  #fire_hd_pc .hd_container .hd_wrap .pc_gnb_wrap .pc_depth2_box .pc_depth2 li a.true::after {
+    position: absolute;
+    top: 0.5rem;
+    right: 8.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: #000;
+    content: "";
   }
   #fire_hd_pc .hd_container .hd_wrap .seoul {
     position: relative;
@@ -1362,9 +1414,6 @@ body {
     font-size: 2rem;
     color: #fff;
     text-align: center;
-  }
-  #fire_hd_pc .hd_container .hd_wrap .pc_gnb_wrap > ul .pc_depth1 > a:hover {
-    color: #000;
   }
   #fire_hd_pc .hd_container .hd_wrap .pc_gnb_wrap .pc_depth2_box {
     position: absolute;

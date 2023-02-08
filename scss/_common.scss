@@ -177,6 +177,19 @@ body {
                         &:hover {
                             font-weight: 600;
                         }
+                        &.true {
+                            position: relative;
+                            &::after {
+                                position: absolute;
+                                top:2.8rem;
+                                right: 1rem;
+                                width: 1rem;
+                                height: 1rem;
+                                border-radius: 50%;
+                                background-color: #000;
+                                content: '';
+                            }
+                        }
                     }
                     .mo_depth2 {
                         display: none;
@@ -192,6 +205,19 @@ body {
                                 font-size: 2rem;
                                 &:hover {
                                     font-weight: 600;
+                                }
+                                &.true {
+                                    position: relative;
+                                    &::after {
+                                        position: absolute;
+                                        top:0.8rem;
+                                        right: -1.5rem;
+                                        width: 0.8rem;
+                                        height: 0.8rem;
+                                        border-radius: 50%;
+                                        background-color: #000;
+                                        content: '';
+                                    }
                                 }
                             }
                         }
