@@ -27,4 +27,10 @@ $(function(){
         //앵커의 기능 실행을 금지
         return false;
     });
+
+    $("a").click(function(){
+        if($(this).attr("href") == "#") {
+            return false;
+        }
+    });
 });
